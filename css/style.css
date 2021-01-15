@@ -8,3 +8,47 @@ body {
   background-color: #ADD8E6;
   font-family: 'Nerko One', cursive;
 }
+
+header > h1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 680px;
+  margin: auto;
+}
+
+.row {
+  position: relative;
+}
+
+.card {
+  background-image: url("../img/pattern.png");
+  background-size: contain;
+  width: 140px;
+  height: 170px;
+  background-repeat: repeat-y;
+}
+
+.row > .card {
+  position: absolute;
+  top: 0;
+}
+
+.card.center-left {
+  left: 180px;
+}
+
+.card.center-right {
+  left: 360px;
+}
+
+.card.right {
+  left: 540px;
+}
