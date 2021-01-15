@@ -29,14 +29,8 @@ header {
 }
 
 .card {
-  background-image: url("../img/pattern.png");
-  background-size: contain;
   width: 140px;
   height: 170px;
-  background-repeat: repeat-y;
-}
-
-.row > .card {
   position: absolute;
   top: 0;
 }
@@ -51,4 +45,20 @@ header {
 
 .card.right {
   left: 540px;
+}
+
+.card > .visible {
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+ .card:hover .visible {
+  display: none;
+}
+
+.card.hidden {
+  display: none;
 }
